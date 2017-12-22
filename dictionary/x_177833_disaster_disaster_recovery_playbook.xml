@@ -15,7 +15,7 @@
         <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Application Dependencies" mandatory="true" max_length="1024" name="u_dr_application_dependencies" reference="cmdb_ci_appl" type="glide_list"/>
         <element label="Application Name" mandatory="true" max_length="32" name="u_dr_application_name" reference="cmdb_ci_appl" type="reference"/>
         <element label="Application Owner" mandatory="true" max_length="4000" name="u_dr_application_owner" reference="sys_user" type="simple_name_values"/>
-        <element label="DR Planner Owner" mandatory="true" max_length="32" name="u_dr_plan_owner" reference="sys_user" type="reference"/>
+        <element label="DR Plan Owner" mandatory="true" max_length="32" name="u_dr_plan_owner" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" default="rpo_tier3" label="Recovery Point Objective" mandatory="true" max_length="40" name="u_dr_rpo" type="string">
             <choice>
                 <element label="Tier 1 (Maximum of 12 hours of data can be lost)" sequence="0" value="rpo_tier1"/>

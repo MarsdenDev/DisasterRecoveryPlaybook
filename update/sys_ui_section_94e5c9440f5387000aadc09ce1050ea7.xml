@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_ui_section caption="New Section" section_id="94e5c9440f5387000aadc09ce1050ea7" sys_domain="global" table="x_177833_disaster_disaster_recovery_playbook" version="3" view="">
+    <sys_ui_section caption="Recovery Requirements" section_id="94e5c9440f5387000aadc09ce1050ea7" sys_domain="global" table="x_177833_disaster_disaster_recovery_playbook" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_rto</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-12-22 20:43:13</sys_created_on>
-            <sys_id>a0e50d440f5387000aadc09ce1050e36</sys_id>
+            <sys_created_on>2017-12-22 22:07:12</sys_created_on>
+            <sys_id>2219598c0f5387000aadc09ce1050e63</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="New Section" display_value="New Section" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">94e5c9440f5387000aadc09ce1050ea7</sys_ui_section>
+            <sys_ui_section caption="Recovery Requirements" display_value="Recovery Requirements" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">94e5c9440f5387000aadc09ce1050ea7</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-12-22 20:43:13</sys_updated_on>
+            <sys_updated_on>2017-12-22 22:07:12</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -19,13 +19,13 @@
             <element>.split</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-12-22 20:43:13</sys_created_on>
-            <sys_id>24e50d440f5387000aadc09ce1050e36</sys_id>
+            <sys_created_on>2017-12-22 22:07:12</sys_created_on>
+            <sys_id>a219598c0f5387000aadc09ce1050e63</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="New Section" display_value="New Section" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">94e5c9440f5387000aadc09ce1050ea7</sys_ui_section>
+            <sys_ui_section caption="Recovery Requirements" display_value="Recovery Requirements" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">94e5c9440f5387000aadc09ce1050ea7</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-12-22 20:43:13</sys_updated_on>
+            <sys_updated_on>2017-12-22 22:07:12</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -33,18 +33,18 @@
             <element>u_dr_rpo</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-12-22 20:43:13</sys_created_on>
-            <sys_id>a4e50d440f5387000aadc09ce1050e36</sys_id>
+            <sys_created_on>2017-12-22 22:07:12</sys_created_on>
+            <sys_id>2619598c0f5387000aadc09ce1050e63</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="New Section" display_value="New Section" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">94e5c9440f5387000aadc09ce1050ea7</sys_ui_section>
+            <sys_ui_section caption="Recovery Requirements" display_value="Recovery Requirements" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">94e5c9440f5387000aadc09ce1050ea7</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-12-22 20:43:13</sys_updated_on>
+            <sys_updated_on>2017-12-22 22:07:12</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
-            <caption>New Section</caption>
+            <caption>Recovery Requirements</caption>
             <header>false</header>
             <name>x_177833_disaster_disaster_recovery_playbook</name>
             <roles/>
@@ -54,15 +54,15 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>94e5c9440f5387000aadc09ce1050ea7</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_name>New Section</sys_name>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Recovery Requirements</sys_name>
             <sys_overrides/>
             <sys_package display_value="Disaster Recovery" source="x_177833_disaster">d43d618b0f4707000aadc09ce1050e40</sys_package>
             <sys_policy/>
             <sys_scope display_value="Disaster Recovery">d43d618b0f4707000aadc09ce1050e40</sys_scope>
             <sys_update_name>sys_ui_section_94e5c9440f5387000aadc09ce1050ea7</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-12-22 20:43:12</sys_updated_on>
+            <sys_updated_on>2017-12-22 22:07:11</sys_updated_on>
             <sys_user/>
             <title>false</title>
             <view display_value="Default view" name="NULL">Default view</view>
