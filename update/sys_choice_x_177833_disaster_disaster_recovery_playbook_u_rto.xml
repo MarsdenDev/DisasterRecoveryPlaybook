@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_rto" table="x_177833_disaster_disaster_recovery_playbook" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_rto</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Choice 3</label>
+            <language>en</language>
+            <name>x_177833_disaster_disaster_recovery_playbook</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-22 18:54:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>700de4880f1387000aadc09ce1050efc</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-22 18:55:58</sys_updated_on>
+            <value>Choice 3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_rto</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Tier 1 (Recovery within 24 hours)</label>
+            <language>en</language>
+            <name>x_177833_disaster_disaster_recovery_playbook</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-22 18:54:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b00de4880f1387000aadc09ce1050efa</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-22 18:55:57</sys_updated_on>
+            <value>tier1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_rto</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Tier 2 (Recovery within 72 hours)</label>
+            <language>en</language>
+            <name>x_177833_disaster_disaster_recovery_playbook</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-22 18:54:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f00de4880f1387000aadc09ce1050efb</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-22 18:55:58</sys_updated_on>
+            <value>tier2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_rto</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Tier 3 (Recovery after 72 hours)</label>
+            <language>en</language>
+            <name>x_177833_disaster_disaster_recovery_playbook</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-22 18:55:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>915da8880f1387000aadc09ce1050ea2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-22 18:55:58</sys_updated_on>
+            <value>tier3</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_rto</element>
+            <name>x_177833_disaster_disaster_recovery_playbook</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-22 18:54:34</sys_created_on>
+            <sys_id>bc0de4880f1387000aadc09ce1050efa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_rto</sys_name>
+            <sys_package display_value="Disaster Recovery" source="x_177833_disaster">d43d618b0f4707000aadc09ce1050e40</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Disaster Recovery">d43d618b0f4707000aadc09ce1050e40</sys_scope>
+            <sys_update_name>sys_choice_x_177833_disaster_disaster_recovery_playbook_u_rto</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-22 18:54:34</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

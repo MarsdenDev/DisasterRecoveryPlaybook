@@ -14,7 +14,7 @@
         <label>Disaster Recovery Playbook</label>
         <live_feed_enabled>false</live_feed_enabled>
         <name>x_177833_disaster_disaster_recovery_playbook</name>
-        <number_ref display_value="DRPlaybook">2312ec040f1387000aadc09ce1050ec7</number_ref>
+        <number_ref display_value="DRPlayBook">2312ec040f1387000aadc09ce1050ec7</number_ref>
         <provider_class/>
         <read_access>true</read_access>
         <super_class/>
