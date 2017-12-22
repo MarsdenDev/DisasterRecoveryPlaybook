@@ -11,8 +11,19 @@
         </element>
         <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Support Teams" mandatory="true" max_length="1024" name="u_drsupport_groups" reference="sys_user_group" type="glide_list"/>
         <element label="Application Owner" mandatory="true" max_length="32" name="u_dr_applicationowner" reference="sys_user" type="reference"/>
+        <element label="Application Dependencies" mandatory="true" max_length="32" name="u_dr_application_dependant" reference="cmdb_ci_appl" type="reference"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Application Dependencies" mandatory="true" max_length="1024" name="u_dr_application_dependencies" reference="cmdb_ci_appl" type="glide_list"/>
         <element label="Application Name" mandatory="true" max_length="32" name="u_dr_application_name" reference="cmdb_ci_appl" type="reference"/>
         <element label="Application Owner" mandatory="true" max_length="4000" name="u_dr_application_owner" reference="sys_user" type="simple_name_values"/>
+        <element label="DR Planner Owner" mandatory="true" max_length="32" name="u_dr_plan_owner" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="rpo_tier3" label="Recovery Point Objective" mandatory="true" max_length="40" name="u_dr_rpo" type="string">
+            <choice>
+                <element label="Tier 1 (Maximum of 12 hours of data can be lost)" sequence="0" value="rpo_tier1"/>
+                <element label="Tier 2 (Maximum of 72 hours of data can be lost)" sequence="1" value="rpo_tier2"/>
+                <element label="Tier 3 (Over 72 hours of data can be lost)" sequence="2" value="rpo_tier3"/>
+            </choice>
+        </element>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Update Which Playbook" mandatory="true" max_length="1024" name="u_dr_update_playbook" reference="sla" type="glide_list"/>
         <element label="New Due Date" max_length="40" name="u_due_date_1" type="due_date"/>
         <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Application Owner" mandatory="true" max_length="1024" name="u_glide_list_2" reference="sys_user_group" type="glide_list"/>
         <element label="New Icon" max_length="100" name="u_icon_3" type="icon"/>
@@ -40,6 +51,12 @@
             <element name="u_dr_applicationowner"/>
         </index>
         <index name="index3">
+            <element name="u_dr_plan_owner"/>
+        </index>
+        <index name="index4">
+            <element name="u_dr_application_dependant"/>
+        </index>
+        <index name="index5">
             <element name="u_dr_application_name"/>
         </index>
     </element>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_dr_application_dependencies" label="Application Dependencies" language="en" table="x_177833_disaster_disaster_recovery_playbook">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_dr_application_dependencies</element>
+            <help/>
+            <hint/>
+            <label>Application Dependencies</label>
+            <language>en</language>
+            <name>x_177833_disaster_disaster_recovery_playbook</name>
+            <plural>Application Dependencies</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-22 21:32:55</sys_created_on>
+            <sys_id>d441d9880f5387000aadc09ce1050e88</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Application Dependencies</sys_name>
+            <sys_package display_value="Disaster Recovery" source="x_177833_disaster">d43d618b0f4707000aadc09ce1050e40</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Disaster Recovery">d43d618b0f4707000aadc09ce1050e40</sys_scope>
+            <sys_update_name>sys_documentation_x_177833_disaster_disaster_recovery_playbook_u_dr_application_dependencies_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-22 21:32:55</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
