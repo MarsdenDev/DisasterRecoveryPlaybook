@@ -3,13 +3,18 @@
     <element audit="true" label="Disaster Recovery Playbook" max_length="40" name="x_177833_disaster_disaster_recovery_playbook" type="collection">
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
         <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Assignment Group" mandatory="true" max_length="1024" name="u_assign_group_owner" reference="cmdb_group" type="glide_list"/>
-        <element attributes="edge_encryption_enabled=true" choice="1" default="createnewplaybook" label="Create or update a playbook" mandatory="true" max_length="40" name="u_choice_4" type="string">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Create or update a playbook" mandatory="true" max_length="40" name="u_choice_4" type="string">
             <choice>
                 <element label="Update Playbook" sequence="0" value="updateplaybook"/>
                 <element label="Create New Playbook" sequence="1" value="createnewplaybook"/>
             </choice>
         </element>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Support Teams" mandatory="true" max_length="1024" name="u_drsupport_groups" reference="sys_user_group" type="glide_list"/>
+        <element label="Application Owner" mandatory="true" max_length="32" name="u_dr_applicationowner" reference="sys_user" type="reference"/>
+        <element label="Application Name" mandatory="true" max_length="32" name="u_dr_application_name" reference="cmdb_ci_appl" type="reference"/>
+        <element label="Application Owner" mandatory="true" max_length="4000" name="u_dr_application_owner" reference="sys_user" type="simple_name_values"/>
         <element label="New Due Date" max_length="40" name="u_due_date_1" type="due_date"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Application Owner" mandatory="true" max_length="1024" name="u_glide_list_2" reference="sys_user_group" type="glide_list"/>
         <element label="New Icon" max_length="100" name="u_icon_3" type="icon"/>
         <element label="New Journal" max_length="4000" name="u_journal_2" type="journal"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Disaster Recovery Type" mandatory="true" max_length="40" name="u_recovery_type" type="string">
@@ -27,9 +32,15 @@
                 <element label="Tier 3 (Recovery after 72 hours)" sequence="2" value="tier3"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" label="New String" max_length="40" name="u_string_2" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Application Description" mandatory="true" max_length="200" name="u_string_2" type="string"/>
         <index name="index">
             <element name="u_reference_4"/>
+        </index>
+        <index name="index2">
+            <element name="u_dr_applicationowner"/>
+        </index>
+        <index name="index3">
+            <element name="u_dr_application_name"/>
         </index>
     </element>
 </database>
