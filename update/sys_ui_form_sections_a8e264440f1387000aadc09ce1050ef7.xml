@@ -25,7 +25,7 @@
             <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_177833_disaster_disaster_recovery_playbook" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">a8e264440f1387000aadc09ce1050ef7</sys_ui_form>
-            <sys_ui_section caption="New Section" display_value="New Section" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">6ce264440f1387000aadc09ce1050ef6</sys_ui_section>
+            <sys_ui_section caption="Status" display_value="Status" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">6ce264440f1387000aadc09ce1050ef6</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2017-12-22 18:10:19</sys_updated_on>
         </sys_ui_form_section>

@@ -2,5 +2,20 @@
 <database>
     <element audit="true" label="Disaster Recovery Playbook" max_length="40" name="x_177833_disaster_disaster_recovery_playbook" type="collection">
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="createnewplaybook" label="Create or update a playbook" mandatory="true" max_length="40" name="u_choice_4" type="string">
+            <choice>
+                <element label="Update Playbook" sequence="0" value="updateplaybook"/>
+                <element label="Create New Playbook" sequence="1" value="createnewplaybook"/>
+            </choice>
+        </element>
+        <element label="New Due Date" max_length="40" name="u_due_date_1" type="due_date"/>
+        <element label="New Journal" max_length="4000" name="u_journal_2" type="journal"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Disaster Recovery Type" mandatory="true" max_length="40" name="u_recovery_type" type="string">
+            <choice>
+                <element label="Application Recovery" sequence="0" value="applicationrecovery"/>
+                <element label="Infrastructure Recovery" sequence="1" value="infrastructurerecovery"/>
+                <element label="Vendor Recovery" sequence="2" value="vendorrecovery"/>
+            </choice>
+        </element>
     </element>
 </database>
