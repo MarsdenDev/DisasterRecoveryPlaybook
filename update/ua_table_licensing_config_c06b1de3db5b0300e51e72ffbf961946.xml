@@ -5,22 +5,22 @@
         <license_condition/>
         <license_model>none</license_model>
         <license_roles/>
-        <name>x_177833_disaster_disaster_recovery_playbook</name>
+        <name>x_177833_disaster_playbook_task</name>
         <op_delete>true</op_delete>
         <op_insert>true</op_insert>
         <op_update>true</op_update>
         <owner_condition/>
         <sys_class_name>ua_table_licensing_config</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-12-22 18:06:58</sys_created_on>
-        <sys_id>eb12ec040f1387000aadc09ce1050ec1</sys_id>
+        <sys_created_on>2018-01-02 19:15:51</sys_created_on>
+        <sys_id>c06b1de3db5b0300e51e72ffbf961946</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_177833_disaster_disaster_recovery_playbook</sys_name>
+        <sys_name>x_177833_disaster_playbook_task</sys_name>
         <sys_package display_value="Disaster Recovery" source="x_177833_disaster">d43d618b0f4707000aadc09ce1050e40</sys_package>
         <sys_policy/>
         <sys_scope display_value="Disaster Recovery">d43d618b0f4707000aadc09ce1050e40</sys_scope>
-        <sys_update_name>ua_table_licensing_config_eb12ec040f1387000aadc09ce1050ec1</sys_update_name>
+        <sys_update_name>ua_table_licensing_config_c06b1de3db5b0300e51e72ffbf961946</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-12-22 18:06:58</sys_updated_on>
+        <sys_updated_on>2018-01-02 19:15:51</sys_updated_on>
     </ua_table_licensing_config>
 </record_update>

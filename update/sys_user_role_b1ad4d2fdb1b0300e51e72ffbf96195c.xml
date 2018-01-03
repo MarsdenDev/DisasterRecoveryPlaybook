@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by display_value="x_177833_disaster.plan_admin" name="x_177833_disaster.plan_admin">3acc492fdb1b0300e51e72ffbf9619ac</assignable_by>
+        <can_delegate>true</can_delegate>
+        <description>able to update some fields but not all (examples: cannot update expiration date)</description>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_177833_disaster.plan_owner</name>
+        <suffix>plan_owner</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-02 18:17:01</sys_created_on>
+        <sys_id>b1ad4d2fdb1b0300e51e72ffbf96195c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_177833_disaster.plan_owner</sys_name>
+        <sys_package display_value="Disaster Recovery" source="x_177833_disaster">d43d618b0f4707000aadc09ce1050e40</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Disaster Recovery">d43d618b0f4707000aadc09ce1050e40</sys_scope>
+        <sys_update_name>sys_user_role_b1ad4d2fdb1b0300e51e72ffbf96195c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-02 18:25:10</sys_updated_on>
+    </sys_user_role>
+</record_update>

@@ -5,41 +5,41 @@
             <element>u_rto</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-12-22 22:07:12</sys_created_on>
-            <sys_id>2219598c0f5387000aadc09ce1050e63</sys_id>
+            <sys_created_on>2018-01-02 14:54:21</sys_created_on>
+            <sys_id>ad8f906bdbd70300e51e72ffbf9619cf</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Recovery Requirements" display_value="Recovery Requirements" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">94e5c9440f5387000aadc09ce1050ea7</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-12-22 22:07:12</sys_updated_on>
+            <sys_updated_on>2018-01-02 14:54:21</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.split</element>
+            <element>u_dr_rpo</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-12-22 22:07:12</sys_created_on>
-            <sys_id>a219598c0f5387000aadc09ce1050e63</sys_id>
+            <sys_created_on>2018-01-02 14:54:21</sys_created_on>
+            <sys_id>218f906bdbd70300e51e72ffbf9619d0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Recovery Requirements" display_value="Recovery Requirements" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">94e5c9440f5387000aadc09ce1050ea7</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-12-22 22:07:12</sys_updated_on>
+            <sys_updated_on>2018-01-02 14:54:21</sys_updated_on>
             <sys_user/>
-            <type>.split</type>
+            <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_dr_rpo</element>
+            <element>u_string_full_dr_justification</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-12-22 22:07:12</sys_created_on>
-            <sys_id>2619598c0f5387000aadc09ce1050e63</sys_id>
+            <sys_created_on>2018-01-02 14:54:21</sys_created_on>
+            <sys_id>a18f906bdbd70300e51e72ffbf9619d0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Recovery Requirements" display_value="Recovery Requirements" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">94e5c9440f5387000aadc09ce1050ea7</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-12-22 22:07:12</sys_updated_on>
+            <sys_updated_on>2018-01-02 14:54:21</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

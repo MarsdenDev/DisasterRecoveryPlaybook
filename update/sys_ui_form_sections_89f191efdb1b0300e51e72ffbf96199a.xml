@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="89f191efdb1b0300e51e72ffbf96199a" sys_domain="global" table="x_177833_disaster_disaster_recovery_playbook" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-02 18:34:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>85f191efdb1b0300e51e72ffbf96199c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_177833_disaster_disaster_recovery_playbook" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="01f1ddafdb1b0300e51e72ffbf9619d1">89f191efdb1b0300e51e72ffbf96199a</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="01f1ddafdb1b0300e51e72ffbf9619d1">89f191efdb1b0300e51e72ffbf961998</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-02 18:34:42</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-02 18:34:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>41f191efdb1b0300e51e72ffbf96199d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_177833_disaster_disaster_recovery_playbook" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="01f1ddafdb1b0300e51e72ffbf9619d1">89f191efdb1b0300e51e72ffbf96199a</sys_ui_form>
+            <sys_ui_section caption="DR Classification" display_value="DR Classification" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="01f1ddafdb1b0300e51e72ffbf9619d1">41f191efdb1b0300e51e72ffbf961999</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-02 18:34:42</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-02 18:34:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>45f191efdb1b0300e51e72ffbf9619a0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_177833_disaster_disaster_recovery_playbook" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="01f1ddafdb1b0300e51e72ffbf9619d1">89f191efdb1b0300e51e72ffbf96199a</sys_ui_form>
+            <sys_ui_section caption="Recovery Requirements" display_value="Recovery Requirements" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="01f1ddafdb1b0300e51e72ffbf9619d1">09f191efdb1b0300e51e72ffbf961999</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-02 18:34:42</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-02 18:34:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>05f191efdb1b0300e51e72ffbf9619b0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_177833_disaster_disaster_recovery_playbook" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="01f1ddafdb1b0300e51e72ffbf9619d1">89f191efdb1b0300e51e72ffbf96199a</sys_ui_form>
+            <sys_ui_section caption="Status" display_value="Status" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="01f1ddafdb1b0300e51e72ffbf9619d1">cdf191efdb1b0300e51e72ffbf961999</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-02 18:34:42</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_177833_disaster_disaster_recovery_playbook</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-02 18:34:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>89f191efdb1b0300e51e72ffbf96199a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_177833_disaster_disaster_recovery_playbook</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Disaster Recovery" source="x_177833_disaster">d43d618b0f4707000aadc09ce1050e40</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Disaster Recovery">d43d618b0f4707000aadc09ce1050e40</sys_scope>
+            <sys_update_name>sys_ui_form_sections_89f191efdb1b0300e51e72ffbf96199a</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-02 18:34:42</sys_updated_on>
+            <sys_user/>
+            <view display_value="Plan Contributor" name="Plan_Contributor">01f1ddafdb1b0300e51e72ffbf9619d1</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

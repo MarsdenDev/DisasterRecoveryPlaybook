@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="document_management_user" name="document_management_user">972206e00a0a2c3543c794db6484f3ee</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2018-01-02 20:43:04</sys_created_on>
+        <sys_id>ad5f216fdb5b0300e51e72ffbf96194b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>972206e00a0a2c3543c794db6484f3ee</sys_name>
+        <sys_package display_value="Disaster Recovery" source="x_177833_disaster">d43d618b0f4707000aadc09ce1050e40</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Disaster Recovery">d43d618b0f4707000aadc09ce1050e40</sys_scope>
+        <sys_update_name>sys_embedded_help_role_ad5f216fdb5b0300e51e72ffbf96194b</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-01-02 20:43:04</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

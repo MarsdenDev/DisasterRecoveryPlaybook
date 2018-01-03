@@ -9,12 +9,14 @@
                 <element label="Create New Playbook" sequence="1" value="createnewplaybook"/>
             </choice>
         </element>
+        <element label="New Data Structure" max_length="800" name="u_data_structure_6" type="data_structure"/>
         <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Support Teams" mandatory="true" max_length="1024" name="u_drsupport_groups" reference="sys_user_group" type="glide_list"/>
         <element label="Application Owner" mandatory="true" max_length="32" name="u_dr_applicationowner" reference="sys_user" type="reference"/>
         <element label="Application Dependencies" mandatory="true" max_length="32" name="u_dr_application_dependant" reference="cmdb_ci_appl" type="reference"/>
         <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Application Dependencies" mandatory="true" max_length="1024" name="u_dr_application_dependencies" reference="cmdb_ci_appl" type="glide_list"/>
         <element label="Application Name" mandatory="true" max_length="32" name="u_dr_application_name" reference="cmdb_ci_appl" type="reference"/>
         <element label="Application Owner" mandatory="true" max_length="4000" name="u_dr_application_owner" reference="sys_user" type="simple_name_values"/>
+        <element label="Business Justification For Selecting Priority 1 or 2" mandatory="true" max_length="40" name="u_dr_justification" type="longint"/>
         <element label="DR Plan Owner" mandatory="true" max_length="32" name="u_dr_plan_owner" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" default="rpo_tier3" label="Recovery Point Objective" mandatory="true" max_length="40" name="u_dr_rpo" type="string">
             <choice>
@@ -23,8 +25,17 @@
                 <element label="Tier 3 (Over 72 hours of data can be lost)" sequence="2" value="rpo_tier3"/>
             </choice>
         </element>
-        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Update Which Playbook" mandatory="true" max_length="1024" name="u_dr_update_playbook" reference="sla" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="waiting_approval" label="State" mandatory="true" max_length="40" name="u_dr_state" type="string">
+            <choice>
+                <element label="Approved" sequence="0" value="approved"/>
+                <element label="Rejected" sequence="1" value="rejected"/>
+                <element label="Pending" sequence="2" value="pending"/>
+                <element label="Awaiting Approval" sequence="3" value="waiting_approval"/>
+            </choice>
+        </element>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Which Playbook" mandatory="true" max_length="1024" name="u_dr_update_playbook" reference="sla" type="glide_list"/>
         <element label="New Due Date" max_length="40" name="u_due_date_1" type="due_date"/>
+        <element label="New Field Name" max_length="80" name="u_field_name_7" type="field_name"/>
         <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Application Owner" mandatory="true" max_length="1024" name="u_glide_list_2" reference="sys_user_group" type="glide_list"/>
         <element label="New Icon" max_length="100" name="u_icon_3" type="icon"/>
         <element label="New Journal" max_length="4000" name="u_journal_2" type="journal"/>
@@ -36,6 +47,7 @@
             </choice>
         </element>
         <element label="New Reference" mandatory="true" max_length="32" name="u_reference_4" reference="cmdb_group" type="reference"/>
+        <element label="New Reference" max_length="32" name="u_reference_8" reference="cmdb_ci_appl_dot_net" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" default="tier3" label="Recovery Time Objective" mandatory="true" max_length="40" name="u_rto" type="string">
             <choice>
                 <element label="Tier 1 (Recovery within 24 hours)" sequence="0" value="tier1"/>
@@ -44,6 +56,7 @@
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" label="Application Description" mandatory="true" max_length="200" name="u_string_2" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Business Justification For Selecting Priority 1 or 2" mandatory="true" max_length="255" name="u_string_full_dr_justification" type="string_full_utf8"/>
         <index name="index">
             <element name="u_reference_4"/>
         </index>
@@ -57,6 +70,9 @@
             <element name="u_dr_application_dependant"/>
         </index>
         <index name="index5">
+            <element name="u_reference_8"/>
+        </index>
+        <index name="index6">
             <element name="u_dr_application_name"/>
         </index>
     </element>

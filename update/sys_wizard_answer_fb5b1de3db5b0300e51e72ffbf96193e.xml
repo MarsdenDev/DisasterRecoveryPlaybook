@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>Playbook Task</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Playbook Task</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Task" name="Task">0152af555402030033996784fa7551df</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-02 19:15:51</sys_created_on>
+        <sys_id>fb5b1de3db5b0300e51e72ffbf96193e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Playbook Task</sys_name>
+        <sys_package display_value="Disaster Recovery" source="x_177833_disaster">d43d618b0f4707000aadc09ce1050e40</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Disaster Recovery">d43d618b0f4707000aadc09ce1050e40</sys_scope>
+        <sys_update_name>sys_wizard_answer_fb5b1de3db5b0300e51e72ffbf96193e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-02 19:15:51</sys_updated_on>
+        <table/>
+        <target_url>x_177833_disaster_playbook_task.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+</record_update>
