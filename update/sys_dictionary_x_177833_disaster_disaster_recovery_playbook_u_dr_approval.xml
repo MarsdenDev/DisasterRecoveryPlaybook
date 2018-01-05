@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="u_dr_region" table="x_177833_disaster_disaster_recovery_playbook">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="u_dr_approval" table="x_177833_disaster_disaster_recovery_playbook">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
@@ -10,10 +10,10 @@
         <choice>1</choice>
         <choice_field/>
         <choice_table/>
-        <column_label>Recovery Region</column_label>
+        <column_label>Approval</column_label>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>dr_not_submitted</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -23,7 +23,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>u_dr_region</element>
+        <element>u_dr_approval</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <internal_type display_value="String">string</internal_type>
@@ -32,7 +32,7 @@
         <name>x_177833_disaster_disaster_recovery_playbook</name>
         <next_element/>
         <primary>false</primary>
-        <read_only>false</read_only>
+        <read_only>true</read_only>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -46,16 +46,16 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-01-03 17:26:36</sys_created_on>
-        <sys_id>21fb4a77db534300e51e72ffbf96192d</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>Recovery Region</sys_name>
+        <sys_created_on>2018-01-05 21:07:19</sys_created_on>
+        <sys_id>b9a159a8dba30300e51e72ffbf96195d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Approval</sys_name>
         <sys_package display_value="Disaster Recovery" source="x_177833_disaster">d43d618b0f4707000aadc09ce1050e40</sys_package>
         <sys_policy/>
         <sys_scope display_value="Disaster Recovery">d43d618b0f4707000aadc09ce1050e40</sys_scope>
-        <sys_update_name>sys_dictionary_x_177833_disaster_disaster_recovery_playbook_u_dr_region</sys_update_name>
+        <sys_update_name>sys_dictionary_x_177833_disaster_disaster_recovery_playbook_u_dr_approval</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-01-05 21:21:36</sys_updated_on>
+        <sys_updated_on>2018-01-05 21:13:34</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

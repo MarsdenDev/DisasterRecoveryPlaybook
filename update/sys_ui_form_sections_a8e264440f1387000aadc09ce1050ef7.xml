@@ -22,54 +22,40 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>a298acc40f1387000aadc09ce1050e9d</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_mod_count>3</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_177833_disaster_disaster_recovery_playbook" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">a8e264440f1387000aadc09ce1050ef7</sys_ui_form>
-            <sys_ui_section caption="DR Classification" display_value="DR Classification" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">ee98acc40f1387000aadc09ce1050e99</sys_ui_section>
+            <sys_ui_section caption="Recovery Classification" display_value="Recovery Classification" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">ee98acc40f1387000aadc09ce1050e99</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-12-22 18:35:18</sys_updated_on>
+            <sys_updated_on>2018-01-05 21:27:37</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-12-22 20:43:13</sys_created_on>
+            <sys_created_on>2018-01-05 21:40:01</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>1ce5c9440f5387000aadc09ce1050eaa</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_id>4929d1acdba30300e51e72ffbf96196e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_177833_disaster_disaster_recovery_playbook" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">a8e264440f1387000aadc09ce1050ef7</sys_ui_form>
-            <sys_ui_section caption="Recovery Requirements" display_value="Recovery Requirements" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">94e5c9440f5387000aadc09ce1050ea7</sys_ui_section>
+            <sys_ui_section caption="Application Access and Security" display_value="Application Access and Security" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">0129d1acdba30300e51e72ffbf96196c</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-12-22 20:43:13</sys_updated_on>
+            <sys_updated_on>2018-01-05 21:40:01</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-12-22 18:10:19</sys_created_on>
+            <sys_created_on>2018-01-05 22:23:42</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>28e264440f1387000aadc09ce1050efa</sys_id>
-            <sys_mod_count>3</sys_mod_count>
-            <sys_overrides/>
-            <sys_ui_form display_value="x_177833_disaster_disaster_recovery_playbook" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">a8e264440f1387000aadc09ce1050ef7</sys_ui_form>
-            <sys_ui_section caption="Status" display_value="Status" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">6ce264440f1387000aadc09ce1050ef6</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-12-22 20:43:13</sys_updated_on>
-        </sys_ui_form_section>
-        <sys_ui_form_section action="INSERT_OR_UPDATE">
-            <position>4</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-01-02 21:05:42</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>d1843563db9b0300e51e72ffbf9619d6</sys_id>
+            <sys_id>3c23a9a0dbe30300e51e72ffbf96196a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_177833_disaster_disaster_recovery_playbook" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">a8e264440f1387000aadc09ce1050ef7</sys_ui_form>
-            <sys_ui_section caption="New Section" display_value="New Section" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">0d84f163db9b0300e51e72ffbf961982</sys_ui_section>
+            <sys_ui_section caption="Server Configuration Requirements" display_value="Server Configuration Requirements" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">7c23a9a0dbe30300e51e72ffbf961967</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-01-02 21:05:42</sys_updated_on>
+            <sys_updated_on>2018-01-05 22:23:42</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_177833_disaster_disaster_recovery_playbook</name>

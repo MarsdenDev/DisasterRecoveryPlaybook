@@ -3,6 +3,7 @@
     <element audit="true" label="Disaster Recovery Playbook" max_length="40" name="x_177833_disaster_disaster_recovery_playbook" type="collection">
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
         <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Assignment Group" mandatory="true" max_length="1024" name="u_assign_group_owner" reference="cmdb_group" type="glide_list"/>
+        <element label="If server IP address changes is there an impact?" max_length="40" name="u_boolean_19" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Create or update a playbook" mandatory="true" max_length="40" name="u_choice_4" type="string">
             <choice>
                 <element label="Update Playbook" sequence="0" value="updateplaybook"/>
@@ -11,14 +12,90 @@
         </element>
         <element label="New Data Structure" max_length="800" name="u_data_structure_6" type="data_structure"/>
         <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Support Teams" mandatory="true" max_length="1024" name="u_drsupport_groups" reference="sys_user_group" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Access controlled by Active Directory" mandatory="true" max_length="40" name="u_dr_ad_access" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="dr_app_access_ad_yes"/>
+                <element label="No" sequence="1" value="dr_app_access_ad_no"/>
+            </choice>
+        </element>
         <element label="Application Owner" mandatory="true" max_length="32" name="u_dr_applicationowner" reference="sys_user" type="reference"/>
         <element label="Application Dependencies" mandatory="true" max_length="32" name="u_dr_application_dependant" reference="cmdb_ci_appl" type="reference"/>
         <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Application Dependencies" mandatory="true" max_length="1024" name="u_dr_application_dependencies" reference="cmdb_ci_appl" type="glide_list"/>
+        <element label="Application Manager" mandatory="true" max_length="32" name="u_dr_application_manager" reference="sys_user" type="reference"/>
         <element label="Application Name" mandatory="true" max_length="32" name="u_dr_application_name" reference="cmdb_ci_appl" type="reference"/>
         <element label="Application Owner" mandatory="true" max_length="4000" name="u_dr_application_owner" reference="sys_user" type="simple_name_values"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Application level security" mandatory="true" max_length="40" name="u_dr_application_security" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="dr_app_security_yes"/>
+                <element label="No" sequence="1" value="dr_app_security_no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="dr_not_submitted" label="Approval" max_length="40" name="u_dr_approval" read_only="true" type="string">
+            <choice>
+                <element label="Approved" sequence="0" value="dr_approved"/>
+                <element label="Rejected" sequence="1" value="dr_rejected"/>
+                <element label="Pending Correction" sequence="2" value="dr_pending_correction"/>
+                <element label="Not Yet Submitted" sequence="3" value="dr_not_submitted"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Access controlled by SAML" mandatory="true" max_length="40" name="u_dr_app_access_saml" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="dr_app_access_saml_yes"/>
+                <element label="No" sequence="1" value="dr_app_access_saml_no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Application source code location" mandatory="true" max_length="40" name="u_dr_app_sourcecode" type="string">
+            <choice>
+                <element label="Choice 1" sequence="0" value="Choice 1"/>
+                <element label="Choice 2" sequence="1" value="Choice 2"/>
+                <element label="Other" sequence="2" value="dr_app_sourcecode_other"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Backup Solution in Use" mandatory="true" max_length="40" name="u_dr_backup" type="string">
+            <choice>
+                <element label="Avamar" sequence="0" value="dr_backup_avamar"/>
+                <element label="Networker" sequence="1" value="dr_backup_networker"/>
+                <element label="Other" sequence="2" value="dr_backup_other"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="F5 rules setup" mandatory="true" max_length="40" name="u_dr_f5_question" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="dr_f5_yes"/>
+                <element label="No" sequence="1" value="dr_f5_no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Firewall Rules setup" mandatory="true" max_length="40" name="u_dr_firewall_question" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="dr_firewall_yes"/>
+                <element label="No" sequence="1" value="dr_firewall_no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Is an interface solution used" mandatory="true" max_length="40" name="u_dr_interface_question" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="dr_interface_yes"/>
+                <element label="No" sequence="1" value="dr_interface_no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Inbound system" mandatory="true" max_length="40" name="u_dr_interface_transfer_inbound" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Outbound system" mandatory="true" max_length="40" name="u_dr_interface_transfer_outbound" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Is there date, time, critical file or transaction transfers?" mandatory="true" max_length="40" name="u_dr_interface_transfer_question" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="dr_interface_transfer_yes"/>
+                <element label="No" sequence="1" value="dr_interface_transfer_no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="What will be the impact?" mandatory="true" max_length="40" name="u_dr_ipaddress_impact" type="string"/>
         <element label="Business Justification For Selecting Priority 1 or 2" mandatory="true" max_length="40" name="u_dr_justification" type="longint"/>
         <element label="DR Plan Owner" mandatory="true" max_length="32" name="u_dr_plan_owner" reference="sys_user" type="reference"/>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Region" max_length="40" name="u_dr_region" type="string">
+        <element attributes="edge_encryption_enabled=true" choice="1" default="dr_draft" label="State" max_length="40" name="u_dr_playbook_state" read_only="true" type="string">
+            <choice>
+                <element label="Draft" sequence="0" value="dr_draft"/>
+                <element label="Approved" sequence="1" value="dr_approved"/>
+                <element label="Work in progress" sequence="2" value="dr_wip"/>
+                <element label="Submitted" sequence="3" value="dr_submitted"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Recovery Region" max_length="40" name="u_dr_region" type="string">
             <choice>
                 <element label="Enterprise Data Center" sequence="0" value="enterprise_center"/>
                 <element label="RHM" sequence="1" value="rhm"/>
@@ -40,6 +117,33 @@
             </choice>
         </element>
         <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Which Playbook" mandatory="true" max_length="1024" name="u_dr_update_playbook" reference="sla" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" label="List required URLs" max_length="40" name="u_dr_url" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Vendor Access" mandatory="true" max_length="40" name="u_dr_vendor_access" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="dr_vendor_yes"/>
+                <element label="No" sequence="1" value="dr_vendor_no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="How does the vendor access the application?" mandatory="true" max_length="40" name="u_dr_vendor_access_how" type="string">
+            <choice>
+                <element label="VPN" sequence="0" value="dr_vendor_access_vpn"/>
+                <element label="URL" sequence="1" value="dr_vendor_access_url"/>
+                <element label="Other" sequence="2" value="dr_vendor_access_other"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Please input steps for vendor access to application" mandatory="true" max_length="40" name="u_dr_vendor_access_steps" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Vendor Backups" mandatory="true" max_length="40" name="u_dr_vendor_backups" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="dr_vendoryes"/>
+                <element label="No" sequence="1" value="dr_vendorno"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="VPN setup" mandatory="true" max_length="40" name="u_dr_vpn_question" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="dr_vpn_yes"/>
+                <element label="No" sequence="1" value="dr_vpn_no"/>
+            </choice>
+        </element>
         <element label="New Due Date" max_length="40" name="u_due_date_1" type="due_date"/>
         <element label="New Field Name" max_length="80" name="u_field_name_7" type="field_name"/>
         <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Application Owner" mandatory="true" max_length="1024" name="u_glide_list_2" reference="sys_user_group" type="glide_list"/>
@@ -73,22 +177,26 @@
                 <element label="Vendor" sequence="5" value="vendor"/>
             </choice>
         </element>
+        <element attributes="edge_encryption_enabled=true" label="How is the backup utilized during recovery?" mandatory="true" max_length="40" name="u_vendor_backup_recovery" type="string"/>
         <index name="index">
             <element name="u_reference_4"/>
         </index>
         <index name="index2">
-            <element name="u_dr_applicationowner"/>
+            <element name="u_dr_application_manager"/>
         </index>
         <index name="index3">
-            <element name="u_dr_plan_owner"/>
+            <element name="u_dr_applicationowner"/>
         </index>
         <index name="index4">
-            <element name="u_dr_application_dependant"/>
+            <element name="u_dr_plan_owner"/>
         </index>
         <index name="index5">
-            <element name="u_reference_8"/>
+            <element name="u_dr_application_dependant"/>
         </index>
         <index name="index6">
+            <element name="u_reference_8"/>
+        </index>
+        <index name="index7">
             <element name="u_dr_application_name"/>
         </index>
     </element>
