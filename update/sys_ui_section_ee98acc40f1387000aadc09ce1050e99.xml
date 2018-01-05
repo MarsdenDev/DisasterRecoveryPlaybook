@@ -5,13 +5,13 @@
             <element>u_choice_4</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-01-02 14:31:44</sys_created_on>
-            <sys_id>ce5a5ca7dbd70300e51e72ffbf961946</sys_id>
+            <sys_created_on>2018-01-03 17:26:37</sys_created_on>
+            <sys_id>25fb4a77db534300e51e72ffbf961965</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="DR Classification" display_value="DR Classification" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">ee98acc40f1387000aadc09ce1050e99</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-01-02 14:31:44</sys_updated_on>
+            <sys_updated_on>2018-01-03 17:26:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -19,13 +19,13 @@
             <element>u_dr_update_playbook</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-01-02 14:31:44</sys_created_on>
-            <sys_id>865a5ca7dbd70300e51e72ffbf961947</sys_id>
+            <sys_created_on>2018-01-03 17:26:37</sys_created_on>
+            <sys_id>a9fb4a77db534300e51e72ffbf961965</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="DR Classification" display_value="DR Classification" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">ee98acc40f1387000aadc09ce1050e99</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-01-02 14:31:44</sys_updated_on>
+            <sys_updated_on>2018-01-03 17:26:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -33,13 +33,13 @@
             <element>u_recovery_type</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-01-02 14:31:44</sys_created_on>
-            <sys_id>0a5a5ca7dbd70300e51e72ffbf961947</sys_id>
+            <sys_created_on>2018-01-03 17:26:37</sys_created_on>
+            <sys_id>2dfb4a77db534300e51e72ffbf961965</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="DR Classification" display_value="DR Classification" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">ee98acc40f1387000aadc09ce1050e99</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-01-02 14:31:44</sys_updated_on>
+            <sys_updated_on>2018-01-03 17:26:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -47,13 +47,13 @@
             <element>u_dr_application_name</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-01-02 14:31:44</sys_created_on>
-            <sys_id>8a5a5ca7dbd70300e51e72ffbf961947</sys_id>
+            <sys_created_on>2018-01-03 17:26:37</sys_created_on>
+            <sys_id>adfb4a77db534300e51e72ffbf961965</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="DR Classification" display_value="DR Classification" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">ee98acc40f1387000aadc09ce1050e99</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-01-02 14:31:44</sys_updated_on>
+            <sys_updated_on>2018-01-03 17:26:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -61,13 +61,13 @@
             <element>u_dr_applicationowner</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-01-02 14:31:44</sys_created_on>
-            <sys_id>0e5a5ca7dbd70300e51e72ffbf961947</sys_id>
+            <sys_created_on>2018-01-03 17:26:37</sys_created_on>
+            <sys_id>21fb4a77db534300e51e72ffbf961966</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="DR Classification" display_value="DR Classification" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">ee98acc40f1387000aadc09ce1050e99</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-01-02 14:31:44</sys_updated_on>
+            <sys_updated_on>2018-01-03 17:26:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -75,13 +75,13 @@
             <element>u_string_2</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-01-02 14:31:44</sys_created_on>
-            <sys_id>8e5a5ca7dbd70300e51e72ffbf961947</sys_id>
+            <sys_created_on>2018-01-03 17:26:37</sys_created_on>
+            <sys_id>a1fb4a77db534300e51e72ffbf961966</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="DR Classification" display_value="DR Classification" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">ee98acc40f1387000aadc09ce1050e99</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-01-02 14:31:44</sys_updated_on>
+            <sys_updated_on>2018-01-03 17:26:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -89,13 +89,13 @@
             <element>u_dr_application_dependencies</element>
             <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-01-02 14:31:44</sys_created_on>
-            <sys_id>025a5ca7dbd70300e51e72ffbf961948</sys_id>
+            <sys_created_on>2018-01-03 17:26:37</sys_created_on>
+            <sys_id>25fb4a77db534300e51e72ffbf961966</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="DR Classification" display_value="DR Classification" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">ee98acc40f1387000aadc09ce1050e99</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-01-02 14:31:44</sys_updated_on>
+            <sys_updated_on>2018-01-03 17:26:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -103,13 +103,13 @@
             <element>.split</element>
             <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-01-02 14:31:44</sys_created_on>
-            <sys_id>825a5ca7dbd70300e51e72ffbf961948</sys_id>
+            <sys_created_on>2018-01-03 17:26:37</sys_created_on>
+            <sys_id>a5fb4a77db534300e51e72ffbf961966</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="DR Classification" display_value="DR Classification" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">ee98acc40f1387000aadc09ce1050e99</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-01-02 14:31:44</sys_updated_on>
+            <sys_updated_on>2018-01-03 17:26:37</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -117,13 +117,13 @@
             <element>u_dr_plan_owner</element>
             <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-01-02 14:31:44</sys_created_on>
-            <sys_id>065a5ca7dbd70300e51e72ffbf961948</sys_id>
+            <sys_created_on>2018-01-03 17:26:37</sys_created_on>
+            <sys_id>29fb4a77db534300e51e72ffbf961966</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="DR Classification" display_value="DR Classification" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">ee98acc40f1387000aadc09ce1050e99</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-01-02 14:31:44</sys_updated_on>
+            <sys_updated_on>2018-01-03 17:26:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -131,13 +131,41 @@
             <element>u_drsupport_groups</element>
             <position>9</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-01-02 14:31:44</sys_created_on>
-            <sys_id>865a5ca7dbd70300e51e72ffbf961948</sys_id>
+            <sys_created_on>2018-01-03 17:26:37</sys_created_on>
+            <sys_id>a9fb4a77db534300e51e72ffbf961966</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="DR Classification" display_value="DR Classification" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">ee98acc40f1387000aadc09ce1050e99</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-01-02 14:31:44</sys_updated_on>
+            <sys_updated_on>2018-01-03 17:26:37</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_dr_region</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-03 17:26:37</sys_created_on>
+            <sys_id>2dfb4a77db534300e51e72ffbf961966</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="DR Classification" display_value="DR Classification" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">ee98acc40f1387000aadc09ce1050e99</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-03 17:26:37</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_tier_2</element>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-03 17:26:37</sys_created_on>
+            <sys_id>adfb4a77db534300e51e72ffbf961966</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="DR Classification" display_value="DR Classification" name="x_177833_disaster_disaster_recovery_playbook" sys_domain="global" view="Default view">ee98acc40f1387000aadc09ce1050e99</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-03 17:26:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

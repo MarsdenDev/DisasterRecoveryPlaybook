@@ -18,6 +18,12 @@
         <element label="Application Owner" mandatory="true" max_length="4000" name="u_dr_application_owner" reference="sys_user" type="simple_name_values"/>
         <element label="Business Justification For Selecting Priority 1 or 2" mandatory="true" max_length="40" name="u_dr_justification" type="longint"/>
         <element label="DR Plan Owner" mandatory="true" max_length="32" name="u_dr_plan_owner" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Region" max_length="40" name="u_dr_region" type="string">
+            <choice>
+                <element label="Enterprise Data Center" sequence="0" value="enterprise_center"/>
+                <element label="RHM" sequence="1" value="rhm"/>
+            </choice>
+        </element>
         <element attributes="edge_encryption_enabled=true" choice="1" default="rpo_tier3" label="Recovery Point Objective" mandatory="true" max_length="40" name="u_dr_rpo" type="string">
             <choice>
                 <element label="Tier 1 (Maximum of 12 hours of data can be lost)" sequence="0" value="rpo_tier1"/>
@@ -57,6 +63,16 @@
         </element>
         <element attributes="edge_encryption_enabled=true" label="Application Description" mandatory="true" max_length="200" name="u_string_2" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Business Justification For Selecting Priority 1 or 2" mandatory="true" max_length="255" name="u_string_full_dr_justification" type="string_full_utf8"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Tier 2" mandatory="true" max_length="40" name="u_tier_2" type="string">
+            <choice>
+                <element label="Allentown" sequence="0" value="allentown"/>
+                <element label="Bethlehem" sequence="1" value="bethlehem"/>
+                <element label="Chicago" sequence="2" value="chicago"/>
+                <element label="Spokane" sequence="3" value="spokane"/>
+                <element label="Valley Forge" sequence="4" value="valley_forge"/>
+                <element label="Vendor" sequence="5" value="vendor"/>
+            </choice>
+        </element>
         <index name="index">
             <element name="u_reference_4"/>
         </index>
