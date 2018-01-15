@@ -5,6 +5,7 @@
         <can_delegate>true</can_delegate>
         <description>Disaster Plan Admin controls all aspects of the Disaster Recovery Plan assignments, changes and roles</description>
         <elevated_privilege>false</elevated_privilege>
+        <encryption_context/>
         <grantable>true</grantable>
         <includes_roles/>
         <name>x_177833_disaster.plan_admin</name>

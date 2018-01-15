@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_string_127" label="VPN information" language="en" table="x_177833_disaster_disaster_recovery_playbook">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_string_127</element>
+            <help/>
+            <hint/>
+            <label>VPN information</label>
+            <language>en</language>
+            <name>x_177833_disaster_disaster_recovery_playbook</name>
+            <plural>VPN informations</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-08 21:57:21</sys_created_on>
+            <sys_id>08e9f4eddba30300e51e72ffbf96196e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>VPN information</sys_name>
+            <sys_package display_value="Disaster Recovery" source="x_177833_disaster">d43d618b0f4707000aadc09ce1050e40</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Disaster Recovery">d43d618b0f4707000aadc09ce1050e40</sys_scope>
+            <sys_update_name>sys_documentation_x_177833_disaster_disaster_recovery_playbook_u_string_127_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-08 21:57:21</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

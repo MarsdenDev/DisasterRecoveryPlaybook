@@ -3,16 +3,46 @@
     <element audit="true" label="Disaster Recovery Playbook" max_length="40" name="x_177833_disaster_disaster_recovery_playbook" type="collection">
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
         <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Assignment Group" mandatory="true" max_length="1024" name="u_assign_group_owner" reference="cmdb_group" type="glide_list"/>
+        <element label="Check box for additional URL fields" max_length="40" name="u_boolean_123" type="boolean"/>
+        <element label="Check box to add new test history" max_length="40" name="u_boolean_125" type="boolean"/>
+        <element label="Checkbox for additional interface field" max_length="40" name="u_boolean_18" type="boolean"/>
         <element label="If server IP address changes is there an impact?" max_length="40" name="u_boolean_19" type="boolean"/>
+        <element label="Check box to add another response contact" max_length="40" name="u_boolean_86" type="boolean"/>
+        <element label="Check box to add another validation contact" max_length="40" name="u_boolean_87" type="boolean"/>
+        <element label="Check box to add another contingency contact" max_length="40" name="u_boolean_88" type="boolean"/>
+        <element label="Check box to add another vendor" max_length="40" name="u_boolean_89" type="boolean"/>
+        <element label="Check box to add another recovery and restoration contact" max_length="40" name="u_boolean_90" type="boolean"/>
+        <element label="Check box to add another resumption contact" max_length="40" name="u_boolean_91" type="boolean"/>
+        <element label="Check box to add another contact" max_length="40" name="u_boolean_92" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Create or update a playbook" mandatory="true" max_length="40" name="u_choice_4" type="string">
             <choice>
                 <element label="Update Playbook" sequence="0" value="updateplaybook"/>
                 <element label="Create New Playbook" sequence="1" value="createnewplaybook"/>
             </choice>
         </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Hosting location" mandatory="true" max_length="40" name="u_choice_5" type="string">
+            <choice>
+                <element label="NODC" sequence="0" value="dr_server_hosting_location_NODC"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Will the Playbook be different from other locations" mandatory="true" max_length="40" name="u_choice_6" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="u_dr_playbook_different_yes"/>
+                <element label="No" sequence="1" value="u_dr_playbook_different_no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Type of test" max_length="40" name="u_choice_81" type="string">
+            <choice>
+                <element label="Rebuild" sequence="0" value="u_dr_playbook_rebuild"/>
+                <element label="Prod Failover" sequence="1" value="u_dr_playbook_prodfailover"/>
+                <element label="Component" sequence="2" value="u_dr_playbook_component"/>
+                <element label="Integrated" sequence="3" value="u_dr_playbook_integrated"/>
+            </choice>
+        </element>
         <element label="New Data Structure" max_length="800" name="u_data_structure_6" type="data_structure"/>
         <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Support Teams" mandatory="true" max_length="1024" name="u_drsupport_groups" reference="sys_user_group" type="glide_list"/>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Access controlled by Active Directory" mandatory="true" max_length="40" name="u_dr_ad_access" type="string">
+        <element label="Check box if there is additional servers" max_length="40" name="u_dr_additional_servers" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Access controlled by Active Directory?" mandatory="true" max_length="40" name="u_dr_ad_access" type="string">
             <choice>
                 <element label="Yes" sequence="0" value="dr_app_access_ad_yes"/>
                 <element label="No" sequence="1" value="dr_app_access_ad_no"/>
@@ -20,11 +50,11 @@
         </element>
         <element label="Application Owner" mandatory="true" max_length="32" name="u_dr_applicationowner" reference="sys_user" type="reference"/>
         <element label="Application Dependencies" mandatory="true" max_length="32" name="u_dr_application_dependant" reference="cmdb_ci_appl" type="reference"/>
-        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Application Dependencies" mandatory="true" max_length="1024" name="u_dr_application_dependencies" reference="cmdb_ci_appl" type="glide_list"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Software requirements" mandatory="true" max_length="1024" name="u_dr_application_dependencies" reference="cmdb_ci_appl" type="glide_list"/>
         <element label="Application Manager" mandatory="true" max_length="32" name="u_dr_application_manager" reference="sys_user" type="reference"/>
         <element label="Application Name" mandatory="true" max_length="32" name="u_dr_application_name" reference="cmdb_ci_appl" type="reference"/>
         <element label="Application Owner" mandatory="true" max_length="4000" name="u_dr_application_owner" reference="sys_user" type="simple_name_values"/>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Application level security" mandatory="true" max_length="40" name="u_dr_application_security" type="string">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Application level security?" mandatory="true" max_length="40" name="u_dr_application_security" type="string">
             <choice>
                 <element label="Yes" sequence="0" value="dr_app_security_yes"/>
                 <element label="No" sequence="1" value="dr_app_security_no"/>
@@ -38,7 +68,7 @@
                 <element label="Not Yet Submitted" sequence="3" value="dr_not_submitted"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Access controlled by SAML" mandatory="true" max_length="40" name="u_dr_app_access_saml" type="string">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Access controlled by SAML?" mandatory="true" max_length="40" name="u_dr_app_access_saml" type="string">
             <choice>
                 <element label="Yes" sequence="0" value="dr_app_access_saml_yes"/>
                 <element label="No" sequence="1" value="dr_app_access_saml_no"/>
@@ -70,6 +100,7 @@
                 <element label="No" sequence="1" value="dr_firewall_no"/>
             </choice>
         </element>
+        <element label="Inbound system" mandatory="true" max_length="4000" name="u_dr_inbound_system" type="journal"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Is an interface solution used" mandatory="true" max_length="40" name="u_dr_interface_question" type="string">
             <choice>
                 <element label="Yes" sequence="0" value="dr_interface_yes"/>
@@ -85,7 +116,15 @@
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" label="What will be the impact?" mandatory="true" max_length="40" name="u_dr_ipaddress_impact" type="string"/>
+        <element label="What will be the impact?" mandatory="true" max_length="4000" name="u_dr_ip_change_impact_input" type="journal"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="If server IP address changes is there an impact?" mandatory="true" max_length="40" name="u_dr_ip_change_impact_question" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="u_dr_ip_change_impact_yes"/>
+                <element label="No" sequence="1" value="u_dr_ip_change_impact_no"/>
+            </choice>
+        </element>
         <element label="Business Justification For Selecting Priority 1 or 2" mandatory="true" max_length="40" name="u_dr_justification" type="longint"/>
+        <element label="Outbound system" mandatory="true" max_length="4000" name="u_dr_outbound_system" type="journal"/>
         <element label="DR Plan Owner" mandatory="true" max_length="32" name="u_dr_plan_owner" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" default="dr_draft" label="State" max_length="40" name="u_dr_playbook_state" read_only="true" type="string">
             <choice>
@@ -95,6 +134,35 @@
                 <element label="Submitted" sequence="3" value="dr_submitted"/>
             </choice>
         </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="What disaster recovery mechanisms are in place" mandatory="true" max_length="40" name="u_dr_recovery_environment_mechanisms_question" type="string">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="DR environment type" mandatory="true" max_length="40" name="u_dr_recovery_environment_question" type="string">
+            <choice>
+                <element label="Active/Active" sequence="0" value="u_dr_recovery_environment_active_active"/>
+                <element label="Active/Passive" sequence="1" value="u_dr_recovery_environment_active_passive"/>
+                <element label="Not Applicable" sequence="2" value="u_dr_recovery_environment_na"/>
+            </choice>
+        </element>
+        <element label="What is the recovery strategy for this application?" mandatory="true" max_length="4000" name="u_dr_recovery_summary_strategy" type="journal"/>
+        <element label="Name" mandatory="true" max_length="32" name="u_dr_recovery_team_contact_1" reference="sys_user" type="reference"/>
+        <element label="Cell Number" mandatory="true" max_length="32" name="u_dr_recovery_team_contact_1_cell" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element label="Office Number" mandatory="true" max_length="32" name="u_dr_recovery_team_contact_1_office_number" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element label="Assignment Group" mandatory="true" max_length="32" name="u_dr_recovery_team_contact_1_usergroup" reference="sys_user_group" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Recovery Role (what component they are responsible for during recovery)" mandatory="true" max_length="40" name="u_dr_recovery_team_contact_role_1" type="string">
+            <choice>
+                <element label="Primary Application" sequence="0" value="u_dr_recovery_team_contact_primary_app"/>
+                <element label="Alternate Application" sequence="1" value="u_dr_recovery_team_contact_alt_app"/>
+                <element label="DBA" sequence="2" value="u_dr_recovery_team_contact_dba"/>
+                <element label="Interface" sequence="3" value="u_dr_recovery_team_contact_interface"/>
+                <element label="Network Security" sequence="4" value="u_dr_recovery_team_contact_network_security"/>
+                <element label="Data Protection" sequence="5" value="u_dr_recovery_team_contact_data_protection"/>
+                <element label="LAN/Desktop" sequence="6" value="u_dr_recovery_team_contact_lan_desktop"/>
+                <element label="Vendor" sequence="7" value="u_dr_recovery_team_contact_vendor"/>
+                <element label="Other" sequence="8" value="u_dr_recovery_team_contact_other"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Vendor Responsibilities" max_length="4000" name="u_dr_recovery_vendor" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Recovery Region" max_length="40" name="u_dr_region" type="string">
             <choice>
                 <element label="Enterprise Data Center" sequence="0" value="enterprise_center"/>
@@ -108,6 +176,42 @@
                 <element label="Tier 3 (Over 72 hours of data can be lost)" sequence="2" value="rpo_tier3"/>
             </choice>
         </element>
+        <element label="Additional build information (open ports/connections/etc)" max_length="4000" name="u_dr_server_additional_build" type="journal"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Service account (has AD account associated with it)" mandatory="true" max_length="40" name="u_dr_server_ad_associated_question" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="u_dr_server_ad_associated_yes"/>
+                <element label="No" sequence="1" value="u_dr_server_ad_associated_no"/>
+            </choice>
+        </element>
+        <element label="Server access Active Directory group" mandatory="true" max_length="4000" name="u_dr_server_ad_group_name" type="journal"/>
+        <element label="This section is meant to capture all information to rebuild the server" max_length="80" name="u_dr_server_configuration_title" type="field_name"/>
+        <element attributes="edge_encryption_enabled=true" label="Number of CPUs" mandatory="true" max_length="4" name="u_dr_server_cpu_amount" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="File services" max_length="40" name="u_dr_server_file_services" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="FTP" max_length="40" name="u_dr_server_ftp_question" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Server function" mandatory="true" max_length="40" name="u_dr_server_function" type="string">
+            <choice>
+                <element label="Application" sequence="0" value="u_dr_server_function_app"/>
+                <element label="Database" sequence="1" value="u_dr_server_function_db"/>
+                <element label="Citrix" sequence="2" value="u_dr_server_function_citrix"/>
+                <element label="Other" sequence="3" value="u_dr_server_function_other"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="IIS" max_length="40" name="u_dr_server_iis" type="string"/>
+        <element label="Internal disk storage (list each drive and associated space needs)" mandatory="true" max_length="4000" name="u_dr_server_internal_disk_storage" type="journal"/>
+        <element attributes="edge_encryption_enabled=true" label="Memory/RAM" mandatory="true" max_length="40" name="u_dr_server_memory_ram" type="string"/>
+        <element label="Server name" mandatory="true" max_length="32" name="u_dr_server_name" reference="cmdb_ci_server" type="reference"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Server name" mandatory="true" max_length="1024" name="u_dr_server_name_1" reference="cmdb_ci_server" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" label="OS version" mandatory="true" max_length="40" name="u_dr_server_os_version" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="SAN space allocation" mandatory="true" max_length="40" name="u_dr_server_san_space" type="string"/>
+        <element label="Share builds or specific share permissions?" max_length="4000" name="u_dr_server_share_permissions" type="journal"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Virtual machine or physical" mandatory="true" max_length="40" name="u_dr_server_vm_or_physical" type="string">
+            <choice>
+                <element label="Virtual Machine" sequence="0" value="u_dr_server_vm_or_physical_vm"/>
+                <element label="Physical" sequence="1" value="u_dr_server_vm_or_physical_physical"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Web services" max_length="40" name="u_dr_server_web_services" type="string"/>
+        <element label="Application source code location" mandatory="true" max_length="4000" name="u_dr_source_code_input" type="journal"/>
         <element attributes="edge_encryption_enabled=true" choice="1" default="waiting_approval" label="State" mandatory="true" max_length="40" name="u_dr_state" type="string">
             <choice>
                 <element label="Approved" sequence="0" value="approved"/>
@@ -117,7 +221,8 @@
             </choice>
         </element>
         <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Which Playbook" mandatory="true" max_length="1024" name="u_dr_update_playbook" reference="sla" type="glide_list"/>
-        <element attributes="edge_encryption_enabled=true" label="List required URLs" max_length="40" name="u_dr_url" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="List required URLs" max_length="4000" name="u_dr_url" type="string"/>
+        <element label="List required URLs" max_length="4000" name="u_dr_urls_listed" type="journal"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Vendor Access" mandatory="true" max_length="40" name="u_dr_vendor_access" type="string">
             <choice>
                 <element label="Yes" sequence="0" value="dr_vendor_yes"/>
@@ -131,7 +236,7 @@
                 <element label="Other" sequence="2" value="dr_vendor_access_other"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" label="Please input steps for vendor access to application" mandatory="true" max_length="40" name="u_dr_vendor_access_steps" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Please input steps for vendor access to application" mandatory="true" max_length="4000" name="u_dr_vendor_access_steps" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Vendor Backups" mandatory="true" max_length="40" name="u_dr_vendor_backups" type="string">
             <choice>
                 <element label="Yes" sequence="0" value="dr_vendoryes"/>
@@ -146,9 +251,31 @@
         </element>
         <element label="New Due Date" max_length="40" name="u_due_date_1" type="due_date"/>
         <element label="New Field Name" max_length="80" name="u_field_name_7" type="field_name"/>
+        <element label="Date of testing" max_length="40" name="u_glide_date_79" type="glide_date"/>
+        <element label="Start/end time" mandatory="true" max_length="40" name="u_glide_duration_100" type="glide_duration"/>
+        <element label="Start/end time" mandatory="true" max_length="40" name="u_glide_duration_56" type="glide_duration"/>
+        <element label="Start/end time" mandatory="true" max_length="40" name="u_glide_duration_60" type="glide_duration"/>
+        <element label="Start/end time" mandatory="true" max_length="40" name="u_glide_duration_65" type="glide_duration"/>
+        <element label="Start/end time" mandatory="true" max_length="40" name="u_glide_duration_67" type="glide_duration"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Outbound system" max_length="1024" name="u_glide_list_105" type="glide_list"/>
         <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Application Owner" mandatory="true" max_length="1024" name="u_glide_list_2" reference="sys_user_group" type="glide_list"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Names of those involved in test" max_length="1024" name="u_glide_list_82" reference="sys_user" type="glide_list"/>
         <element label="New Icon" max_length="100" name="u_icon_3" type="icon"/>
         <element label="New Journal" max_length="4000" name="u_journal_2" type="journal"/>
+        <element label="New Journal" max_length="4000" name="u_journal_3" type="journal"/>
+        <element label="Other team responsibilities" max_length="4000" name="u_journal_41" type="journal"/>
+        <element label="Assumptions" max_length="4000" name="u_journal_42" type="journal"/>
+        <element label="Recovery documentation" max_length="4000" name="u_journal_43" type="journal"/>
+        <element label="Task description" mandatory="true" max_length="4000" name="u_journal_55" type="journal"/>
+        <element label="Comments" max_length="4000" name="u_journal_57" type="journal"/>
+        <element label="Task description" mandatory="true" max_length="4000" name="u_journal_59" type="journal"/>
+        <element label="Comments" max_length="4000" name="u_journal_61" type="journal"/>
+        <element label="Task description" mandatory="true" max_length="4000" name="u_journal_63" type="journal"/>
+        <element label="Comments" max_length="4000" name="u_journal_64" type="journal"/>
+        <element label="Task description" mandatory="true" max_length="4000" name="u_journal_68" type="journal"/>
+        <element label="Task description" mandatory="true" max_length="4000" name="u_journal_72" type="journal"/>
+        <element label="Test scope" max_length="4000" name="u_journal_83" type="journal"/>
+        <element label="New Long" max_length="40" name="u_longint_2" type="longint"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Disaster Recovery Type" mandatory="true" max_length="40" name="u_recovery_type" type="string">
             <choice>
                 <element label="Application Recovery" sequence="0" value="applicationrecovery"/>
@@ -157,7 +284,13 @@
             </choice>
         </element>
         <element label="New Reference" mandatory="true" max_length="32" name="u_reference_4" reference="cmdb_group" type="reference"/>
+        <element label="Response contact" mandatory="true" max_length="32" name="u_reference_51" reference="sys_user" type="reference"/>
+        <element label="Recovery and restoration contact" mandatory="true" max_length="32" name="u_reference_58" reference="sys_user" type="reference"/>
+        <element label="Validation contact" mandatory="true" max_length="32" name="u_reference_62" reference="sys_user" type="reference"/>
+        <element label="Resumption contact" mandatory="true" max_length="32" name="u_reference_66" reference="sys_user" type="reference"/>
+        <element label="Contingency contact" mandatory="true" max_length="32" name="u_reference_69" reference="sys_user" type="reference"/>
         <element label="New Reference" max_length="32" name="u_reference_8" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element label="Email address" max_length="32" name="u_reference_85" reference="cmdb_ci_appl_dot_net" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" default="tier3" label="Recovery Time Objective" mandatory="true" max_length="40" name="u_rto" type="string">
             <choice>
                 <element label="Tier 1 (Recovery within 24 hours)" sequence="0" value="tier1"/>
@@ -165,8 +298,64 @@
                 <element label="Tier 3 (Recovery after 72 hours)" sequence="2" value="tier3"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" label="Application Description" mandatory="true" max_length="200" name="u_string_2" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Software requirements" mandatory="true" max_length="4000" name="u_string_1" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Outbound" max_length="40" name="u_string_10" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="What will be the impact" max_length="40" name="u_string_103" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Inbound system" max_length="40" name="u_string_104" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Application source control location" max_length="40" name="u_string_106" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Additional build information (open ports/connections/etc)" max_length="4000" name="u_string_107" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Share builds or specific share permissions?" max_length="4000" name="u_string_108" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Server access Active Directory group" max_length="4000" name="u_string_109" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Inbound" max_length="40" name="u_string_11" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Internal disk storage (list each drive and associated space needs)" max_length="4000" name="u_string_110" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Assumptions" max_length="4000" name="u_string_111" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Recovery documentation" max_length="4000" name="u_string_112" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Other team responsibilities" max_length="4000" name="u_string_113" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Test scope" max_length="4000" name="u_string_114" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" mandatory="true" max_length="4000" name="u_string_115" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Task description" mandatory="true" max_length="4000" name="u_string_116" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Task description" mandatory="true" max_length="4000" name="u_string_117" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Task description" mandatory="true" max_length="4000" name="u_string_118" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Task description" max_length="4000" name="u_string_119" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Interface" max_length="40" name="u_string_12" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Task description" mandatory="true" max_length="4000" name="u_string_120" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Inbound" mandatory="true" max_length="40" name="u_string_121" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Outbound" mandatory="true" max_length="40" name="u_string_122" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Firewall information" mandatory="true" max_length="4000" name="u_string_126" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="VPN information" mandatory="true" max_length="4000" name="u_string_127" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="F5 information" mandatory="true" max_length="4000" name="u_string_128" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="AD account information" mandatory="true" max_length="4000" name="u_string_129" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Inbound" max_length="40" name="u_string_13" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="FTP information" mandatory="true" max_length="4000" name="u_string_130" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="IIS information" mandatory="true" max_length="4000" name="u_string_131" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="File services information" mandatory="true" max_length="4000" name="u_string_132" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Web services information" mandatory="true" max_length="4000" name="u_string_133" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Outbound" max_length="40" name="u_string_14" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Interface" max_length="40" name="u_string_15" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Inbound" max_length="40" name="u_string_16" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Outbound" max_length="40" name="u_string_17" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Application Description" mandatory="true" max_length="4000" name="u_string_2" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Enterprise team responsibilities" max_length="4000" name="u_string_38" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Local RHM TIS responsibilities" max_length="4000" name="u_string_39" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="System components or application" max_length="40" name="u_string_44" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Critical 1 dependency" max_length="40" name="u_string_45" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Critical 2 dependency" max_length="40" name="u_string_46" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Critical 3 dependency" max_length="40" name="u_string_47" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Critical 4 dependency" max_length="40" name="u_string_48" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Critical 5 dependency" max_length="40" name="u_string_49" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Comments" max_length="4000" name="u_string_7" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Vendor company name" max_length="40" name="u_string_74" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Maintenance contact or account number" max_length="40" name="u_string_75" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Company Contact number" max_length="40" name="u_string_76" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Contact person" max_length="40" name="u_string_77" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Work, Cell, Email and/or website" max_length="40" name="u_string_78" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Interface" max_length="40" name="u_string_8" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Test scope" max_length="40" name="u_string_80" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Interface" max_length="40" name="u_string_9" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="What dr mechanisms are in place" max_length="4000" name="u_string_93" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Business Justification For Selecting Priority 1 or 2" mandatory="true" max_length="255" name="u_string_full_dr_justification" type="string_full_utf8"/>
+        <element attributes="edge_encryption_enabled=true" label="Critical 6 dependency" max_length="255" name="u_string_full_utf8_50" type="string_full_utf8"/>
+        <element attributes="edge_encryption_enabled=true" label="testing to see if this is long text box" max_length="255" name="u_string_full_utf8_94" type="string_full_utf8"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Tier 2" mandatory="true" max_length="40" name="u_tier_2" type="string">
             <choice>
                 <element label="Allentown" sequence="0" value="allentown"/>
@@ -177,27 +366,53 @@
                 <element label="Vendor" sequence="5" value="vendor"/>
             </choice>
         </element>
+        <element label="List required URLs" max_length="1024" name="u_url_101" type="url"/>
+        <element label="List required URLs" max_length="1024" name="u_url_124" type="url"/>
         <element attributes="edge_encryption_enabled=true" label="How is the backup utilized during recovery?" mandatory="true" max_length="40" name="u_vendor_backup_recovery" type="string"/>
         <index name="index">
             <element name="u_reference_4"/>
         </index>
         <index name="index2">
-            <element name="u_dr_application_manager"/>
+            <element name="u_dr_server_name"/>
         </index>
         <index name="index3">
-            <element name="u_dr_applicationowner"/>
+            <element name="u_dr_application_manager"/>
         </index>
         <index name="index4">
-            <element name="u_dr_plan_owner"/>
+            <element name="u_reference_58"/>
         </index>
         <index name="index5">
-            <element name="u_dr_application_dependant"/>
+            <element name="u_reference_69"/>
         </index>
         <index name="index6">
-            <element name="u_reference_8"/>
+            <element name="u_dr_plan_owner"/>
         </index>
         <index name="index7">
+            <element name="u_dr_application_dependant"/>
+        </index>
+        <index name="index8">
+            <element name="u_reference_8"/>
+        </index>
+        <index name="index9">
+            <element name="u_dr_recovery_team_contact_1"/>
+        </index>
+        <index name="index10">
             <element name="u_dr_application_name"/>
+        </index>
+        <index name="index11">
+            <element name="u_reference_51"/>
+        </index>
+        <index name="index12">
+            <element name="u_reference_62"/>
+        </index>
+        <index name="index13">
+            <element name="u_reference_85"/>
+        </index>
+        <index name="index14">
+            <element name="u_reference_66"/>
+        </index>
+        <index name="index15">
+            <element name="u_dr_applicationowner"/>
         </index>
     </element>
 </database>

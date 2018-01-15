@@ -5,6 +5,7 @@
         <can_delegate>true</can_delegate>
         <description>plan contributors are very limited in what changes they can make to the dr plan</description>
         <elevated_privilege>false</elevated_privilege>
+        <encryption_context/>
         <grantable>true</grantable>
         <includes_roles/>
         <name>x_177833_disaster.plan_contributor</name>

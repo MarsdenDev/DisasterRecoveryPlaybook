@@ -5,6 +5,7 @@
         <can_delegate>true</can_delegate>
         <description>able to update some fields but not all (examples: cannot update expiration date)</description>
         <elevated_privilege>false</elevated_privilege>
+        <encryption_context/>
         <grantable>true</grantable>
         <includes_roles/>
         <name>x_177833_disaster.plan_owner</name>

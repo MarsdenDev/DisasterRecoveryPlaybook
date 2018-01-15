@@ -5,6 +5,7 @@
         <can_delegate>true</can_delegate>
         <description>Plan Approvers receive the dr playbooks and decide if it is acceptable</description>
         <elevated_privilege>false</elevated_privilege>
+        <encryption_context/>
         <grantable>true</grantable>
         <includes_roles/>
         <name>x_177833_disaster.plan_approver</name>

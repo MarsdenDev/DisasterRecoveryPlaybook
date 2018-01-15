@@ -28,7 +28,7 @@
         <foreign_database/>
         <internal_type display_value="String">string</internal_type>
         <mandatory>true</mandatory>
-        <max_length>40</max_length>
+        <max_length>4000</max_length>
         <name>x_177833_disaster_disaster_recovery_playbook</name>
         <next_element/>
         <primary>false</primary>
